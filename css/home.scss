@@ -74,6 +74,8 @@ a{
     Global Styles
 */
 
+
+// Header
 header {
     background-color: $turquoiseGreen;
     .container1440{
@@ -104,6 +106,48 @@ header {
                 padding: 10px 20px;
                 border-radius: 5px;
             }
+        }
+    }
+}
+
+// Footer
+
+footer {
+    background: rgb(3,196,144);
+    background: linear-gradient(0deg, rgba(3,196,144,1) 0%, rgba(3,196,144,0.75) 35%, rgba(3,196,144,0.45) 67%, rgba(3,196,144,0) 100%);
+    .container1440{
+        @include divContainer(1440px, 0, 15px);
+        img{
+            max-height: 170px;
+            max-width: 100%;
+        }
+        .contentFooter{
+            @include flexCenter;
+            margin-bottom: 30px;
+        }
+        #listUl{
+            display: flex;
+            gap: 140px;
+            ul{
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                gap: 20px;
+                .titleList{
+                    font-size: 20px;
+                }
+                a{
+                    color: $darkGrey;
+                    transition: all 0.2s ease;
+                    &:hover{
+                        color: $white;
+                    }
+                }
+            }
+        }
+        p{
+            @include flexCenter;
+            color: $white;
         }
     }
 }

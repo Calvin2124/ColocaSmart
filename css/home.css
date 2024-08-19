@@ -87,4 +87,50 @@ header .container1440 ul .btnRegister:hover {
   border: 1px solid #03C490;
 }
 
+footer {
+  background: rgb(3, 196, 144);
+  background: linear-gradient(0deg, rgb(3, 196, 144) 0%, rgba(3, 196, 144, 0.75) 35%, rgba(3, 196, 144, 0.45) 67%, rgba(3, 196, 144, 0) 100%);
+}
+footer .container1440, footer header .container1440 ul, header .container1440 footer ul {
+  max-width: 1440px;
+  margin: auto;
+  padding: 0 15px;
+}
+footer .container1440 img, header .container1440 footer ul img {
+  max-height: 170px;
+  max-width: 100%;
+}
+footer .container1440 .contentFooter, header .container1440 footer ul .contentFooter {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-bottom: 30px;
+}
+footer .container1440 #listUl, header .container1440 footer ul #listUl {
+  display: flex;
+  gap: 140px;
+}
+footer .container1440 #listUl ul, header .container1440 footer ul #listUl ul {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 20px;
+}
+footer .container1440 #listUl ul .titleList, header .container1440 footer ul #listUl ul .titleList {
+  font-size: 20px;
+}
+footer .container1440 #listUl ul a, header .container1440 footer ul #listUl ul a {
+  color: #454545;
+  transition: all 0.2s ease;
+}
+footer .container1440 #listUl ul a:hover, header .container1440 footer ul #listUl ul a:hover {
+  color: #fff;
+}
+footer .container1440 p, header .container1440 footer ul p {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  color: #fff;
+}
+
 /*# sourceMappingURL=home.css.map */
