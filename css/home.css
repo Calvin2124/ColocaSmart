@@ -133,4 +133,45 @@ footer .container1440 p, header .container1440 footer ul p {
   color: #fff;
 }
 
+main #presentation {
+  position: relative;
+}
+main #presentation .container860 {
+  max-width: 860px;
+  margin: auto;
+  padding: 0 15px;
+  background-image: url("../img/bria_a0cf9b386c963399.PNG");
+  background-size: cover;
+  height: 850px;
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+main #presentation .container860 .textSection1 {
+  z-index: 2;
+  color: #fff;
+  position: absolute;
+  top: 40%;
+  left: 15%;
+}
+main #presentation .container860 .textSection1 h1 {
+  font-size: 45px;
+  font-family: "Lato", sans-serif;
+}
+main #presentation .container860 .textSection1 h1 span {
+  background-color: rgba(245, 245, 220, 0.48);
+}
+main #presentation::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(3, 196, 144, 0.5);
+  background: rgb(3, 196, 144);
+  background: linear-gradient(180deg, rgb(3, 196, 144) 0%, rgba(3, 196, 144, 0.75) 20%, rgba(3, 196, 144, 0.55) 60%, rgba(3, 196, 144, 0) 100%);
+  z-index: 1;
+}
+
 /*# sourceMappingURL=home.css.map */
