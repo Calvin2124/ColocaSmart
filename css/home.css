@@ -63,7 +63,7 @@ header .container1440 ul {
 }
 header .container1440 ul a {
   font-size: 20px;
-  color: #fff;
+  color: #000;
   transition: all 0.3s ease;
 }
 header .container1440 ul a:hover {
