@@ -11,6 +11,10 @@
 /*
     Réinitialisation des styles
 */
+.menu {
+  display: none;
+}
+
 p {
   font-family: "Open Sans", sans-serif;
 }
@@ -147,6 +151,7 @@ main #presentation .container860 {
   padding: 0 15px;
   background-image: url("../img/bria_a0cf9b386c963399.PNG");
   background-size: cover;
+  background-position: center;
   height: 850px;
   display: flex;
   align-items: center;
@@ -172,7 +177,7 @@ main #presentation .container860 .textSection1 {
   z-index: 2;
   color: #fff;
   position: absolute;
-  top: 40%;
+  top: 10%;
   left: 15%;
 }
 main #presentation .container860 .textSection1 h1 {
@@ -354,6 +359,54 @@ main #contact .container1440 div form button:hover, header .container1440 main #
 main #contact .container1440 div img, header .container1440 main #contact ul div img {
   max-width: 100%;
   max-height: 700px;
+}
+
+@media screen and (max-width: 1024px) {
+  header ul {
+    display: none !important;
+  }
+  header .menu {
+    display: block;
+    color: #fff;
+    cursor: pointer;
+  }
+  #serviceArticle {
+    grid-template-columns: repeat(2, 1fr) !important;
+  }
+}
+@media screen and (max-width: 768px) {
+  footer .contentFooter {
+    flex-direction: column;
+    gap: 20px;
+  }
+  #contact .container1440 div, header .container1440 #contact ul div {
+    display: flex !important;
+    flex-direction: column-reverse;
+  }
+  #contact .container1440 div #rgpd, header .container1440 #contact ul div #rgpd {
+    display: block !important;
+  }
+}
+@media screen and (max-width: 425px) {
+  #listUl {
+    flex-direction: column;
+    gap: 40px !important;
+  }
+  #serviceArticle {
+    grid-template-columns: 1fr !important;
+  }
+  h1 {
+    font-size: 42px !important;
+  }
+  #pret h2 {
+    font-size: 32px !important;
+  }
+  #video h2 {
+    font-size: 32px !important;
+  }
+  #contact h2 {
+    font-size: 32px !important;
+  }
 }
 
 /*# sourceMappingURL=home.css.map */

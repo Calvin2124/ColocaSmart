@@ -49,6 +49,10 @@ $latoFont: 'Lato', sans-serif;
     Réinitialisation des styles
 */
 
+.menu {
+    display: none;
+}
+
 p{
     font-family: $openSansFont;
 }
@@ -166,6 +170,7 @@ main{
             @include divContainer(860px, 0, 15px);
             background-image: url('../img/bria_a0cf9b386c963399.PNG');
             background-size: cover;
+            background-position: center;
             height: 850px;
             display: flex;
             align-items: center;
@@ -182,7 +187,7 @@ main{
                 z-index: 2;
                 color: $white;
                 position: absolute;
-                top: 40%;
+                top: 10%;
                 left: 15%;
                 h1{
                     font-size: 52px;
@@ -349,5 +354,69 @@ main{
             }
         }
     }
+}
 
+// Responsive
+@media screen and (max-width: 1024px){
+    header {
+        ul {
+            display: none!important;
+        }
+        .menu {
+            display: block;
+            color: $white;
+            cursor: pointer;
+        }
+    }
+    #serviceArticle{
+        grid-template-columns: repeat(2, 1fr)!important;
+    }
+} 
+
+@media screen and (max-width: 768px){
+    footer{
+        .contentFooter{
+            flex-direction: column;
+            gap: 20px;
+        }
+    }
+    #contact{
+        .container1440{
+            div{
+                display: flex!important;
+                flex-direction: column-reverse;
+                #rgpd{
+                    display: block!important;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 425px) {
+    #listUl{
+        flex-direction: column;
+        gap: 40px!important;
+    }
+    #serviceArticle{
+        grid-template-columns: 1fr!important;
+    }
+    h1{
+        font-size: 42px!important;
+    }
+    #pret{
+        h2{
+            font-size: 32px!important;
+        }
+    }
+    #video{
+        h2{
+            font-size: 32px!important;
+        }
+    }
+    #contact{
+        h2{
+            font-size: 32px!important;
+        }
+    }
 }
