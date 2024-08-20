@@ -218,8 +218,8 @@ main #services .container1440 #servicesP, header .container1440 main #services u
   color: #757575;
 }
 main #services .container1440 #serviceArticle, header .container1440 main #services ul #serviceArticle {
-  display: flex;
-  justify-content: space-around;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
   gap: 20px;
   margin-bottom: 50px;
 }
