@@ -37,6 +37,14 @@ a{
     text-decoration: none;
 }
 
+h1{
+    font-family: var(--latoFont);
+}
+
+p{
+    font-family: var(--openSansFont);
+}
+
 ul{
     list-style: none;
     padding: 0;
@@ -194,4 +202,69 @@ main{
     background-color: #F5F5F5;
     outline: none;
     resize: none;
+}
+
+form label a {
+    font-family: var(--openSansFont);
+}
+
+footer a, header a{
+    font-family: var(--robotoFont);
+}
+
+/* Responsive */
+@media screen and (max-width: 768px){
+    .container1200{
+        grid-template-columns: 1fr;
+        padding: 40px;
+    }
+
+    .txt{
+        margin: 0;
+    }
+
+    .container1200 img{
+        display: none;
+    }
+
+    .contentFooter{
+        flex-direction: column;
+    }
+}
+
+@media screen and (max-width: 480px){
+    #listUl{
+        flex-direction: column;
+        gap: 40px;
+    }
+
+    #listUl ul{
+        gap: 10px;
+    }
+
+    .contentFooter{
+        gap: 20px;
+    }
+
+    .container1200{
+        padding: 20px;
+    }
+
+    .container1200 form{
+        gap: 30px;
+    }
+
+    .container1200 form input{
+        padding: 15px;
+    }
+
+    .btnBlue{
+        padding: 10px 15px;
+        font-size: 0.8rem;
+    }
+
+    .titleList{
+        font-size: 16px;
+    }
+    
 }
