@@ -1,0 +1,81 @@
+.menu {
+    display: none;
+  }
+  
+  p {
+    font-family: "Open Sans", sans-serif;
+  }
+  
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+  }
+  
+  ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  a {
+    text-decoration: none;
+    font-family: "Roboto", sans-serif;
+  }
+  
+  body {
+    background-color: #FEFDFD;
+  }
+
+header {
+    background-color: #03C490;
+  }
+  header .container1440, header .container1440 ul {
+    max-width: 1440px;
+    margin: auto;
+    padding: 0 15px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+  header .container1440 img {
+    max-height: 170px;
+    max-width: 100%;
+  }
+  header .container1440 ul {
+    gap: 20px;
+  }
+  header .container1440 ul a {
+    font-size: 20px;
+    color: #000;
+    transition: all 0.3s ease;
+  }
+  header .container1440 ul a:hover {
+    color: #000;
+  }
+  header .container1440 ul .btnLogin {
+    color: #fff;
+    border: 2px solid #6595F3;
+    background-color: #6595F3;
+    transition: all 0.3s ease;
+    padding: 10px 20px;
+    border-radius: 5px;
+  }
+  header .container1440 ul .btnLogin:hover {
+    color: #fff;
+    background-color: #03C490;
+    border: 2px solid #03C490;
+  }
+  header .container1440 ul .btnRegister {
+    color: #000;
+    border: 1px solid #000;
+    background-color: #fff;
+    transition: all 0.3s ease;
+    padding: 10px 20px;
+    border-radius: 5px;
+  }
+  header .container1440 ul .btnRegister:hover {
+    color: #fff;
+    background-color: #03C490;
+    border: 1px solid #03C490;
+  }
