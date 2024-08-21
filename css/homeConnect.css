@@ -1,0 +1,244 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+/* variable */
+:root{
+    --white: #fff;
+    --black: #000;
+    --darkGrey: #454545;
+    --azureBlue: #6595F3;
+    --mediumGrey: #757575;
+    --veryLightGrey: #F0F0F0;
+    --primaryColor: #FEFDFD;
+    --veryLightGrey2: #F5F5F5;
+    --turquoiseGreen: #03C490;
+    --mediumGrey2: #808181;
+    --robotoFont: 'Roboto', sans-serif;
+    --openSansFont: 'Open Sans', sans-serif;
+    --latoFont: 'Lato', sans-serif;
+    --purple: #7B7ED0;
+}
+
+/* global */
+
+body{
+    background-color: var(--turquoiseGreen);
+}
+
+a{
+    text-decoration: none;
+}
+
+h1{
+    font-family: var(--latoFont);
+}
+
+p{
+    font-family: var(--openSansFont);
+}
+
+ul{
+    list-style: none;
+    padding: 0;
+}
+
+.container1200{
+    max-width: 1200px;
+    margin: auto;
+    padding: 0 15px;
+}
+
+.container1440{
+    max-width: 1440px;
+    margin: auto;
+    padding: 0 15px;
+}
+
+/* header */
+header{
+    display: flex;
+}
+
+header a img{
+    max-width: 100%;
+    max-height: 170px;
+}
+
+footer{
+    margin-top: 100px;
+}
+
+footer img {
+    max-width: 100%;
+    max-height: 170px;
+}
+
+.contentFooter{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+#listUl{
+    display: flex;
+    gap: 140px;
+}
+
+#listUl ul{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px;
+}
+
+.titleList{
+    font-size: 20px;
+    color: var(--white);
+}
+
+#listUl ul a{
+    color: var(--white);
+    transition: all 0.2s ease;
+}
+
+#listUl ul a:hover{
+    color: var(--black);
+}
+
+body > footer > div > p{
+    text-align: center;
+    color: var(--white);
+}
+
+/* CONTENT */
+
+main .container1440{
+    display: grid;
+    grid-template-columns: 20% auto;
+    margin-top: 100px;
+    gap: 40px;
+    background-color: var(--white);
+    border-radius: 40px;
+    padding: 40px;
+    min-height: 1000px;
+
+}
+
+main .container1440 aside{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+h1{
+    font-size: 40px;
+    font-family: var(--latoFont);
+}
+
+h2{
+    font-size: 30px;
+    font-family: var(--latoFont);
+}
+
+.round{
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    background-color: var(--mediumGrey);
+    margin-bottom: 40px;
+}
+
+.nameUser{
+    font-size: 25px;
+    color: var(--darkGrey);
+    font-weight: 400;
+}
+
+.groupAside{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    border-bottom: 3px solid var(--purple);
+    border-top: 3px solid var(--purple);
+    padding: 50px 0;
+}
+
+.groupAside ul{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+main .container1440 section {
+    background-color: var(--turquoiseGreen);
+    border-radius: 0 20px 20px 0;
+}
+
+.groupName{
+    color: var(--black);
+    font-family: var(--openSansFont);
+    font-size: 20px;
+    font-weight: 400;
+    transition: all 0.2s ease;
+}
+
+.groupName:hover{
+    font-weight:600;
+
+}
+
+main .container1440 .groupAside .addGroup {
+    color: var(--mediumGrey2);
+    transition: all 0.2s ease;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-family: var(--robotoFont);
+    margin-top: 10px;
+}
+
+
+main .container1440 .groupAside .addGroup i{
+    transition: all 0.2s ease;
+    background-color: var(--mediumGrey2);
+    border-radius: 50%;
+    color: var(--white);
+    padding: 10px;
+    width: 10px;
+    height: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 15px;
+}
+
+main .container1440 .groupAside .addGroup:hover {
+    color: var(--purple);
+    i{
+        transition: all 0.2s ease;
+        color: var(--purple);
+        background-color: var(--white);
+    }
+}
+
+.disconnect{
+    padding: 10px 20px;
+    color: var(--white);
+    background-color: #E25151;
+    border-radius: 3px;
+    margin-right: auto;
+    transition: all 0.2s ease; 
+}
+
+.disconnect:hover{
+    background-color: #C63D3D;
+}

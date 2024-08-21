@@ -73,6 +73,9 @@ ul{
     font-family: var(--latoFont);
 }
 
+
+/* CONTENT */
+
 body{
     background-image: url('../img/355c3cac-af40-4e55-9d25-d390665c071c.webp');
     background-size: cover;
