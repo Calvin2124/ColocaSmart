@@ -1,29 +1,35 @@
-const title = document.querySelector('h1');
-const modal = `
-<dialog class="modal">
-        <span class="close">&times;</span>
-        <div class="split">
-            <div class="left">
-                <img src="../img/Minimalist UI illustration of couple dancing in a flat illustration style on a white background with bright color scheme, dribbble, flat vector.jpg" alt="Join Image">
-                <a href="#" target="_blank" class="button">Rejoindre</a>
-            </div>
-            <div class="right">
-                <img src="../img/Minimalist UI illustration of teacher giving a lecture in a flat illustration style on a white background with bright color scheme, dribbble, flat vector.jpg" alt="Create Image">
-                <a href="#" target="_blank" class="button">Créer</a>
-            </div>
-        </div>
-</dialog>
-`;
+const left = document.querySelector('.left');
+const containerLeft = document.querySelector('.container');
+left.addEventListener('mouseover', (e) => {
+    e.preventDefault();
+    console.log("Left button clicked");
+    //changer le grid template 
+    containerLeft.style.gridTemplateColumns = "80% 20%";
+    // ajouter une transition
+    containerLeft.style.transition = "all 0.8s";
+    })
 
-title.addEventListener('click', () => {
-    title.insertAdjacentHTML('afterend', modal);
-    const dialog = document.querySelector('.modal');
-    dialog.showModal(); // Opens the modal dialog
-    console.log('clicked');
+left.addEventListener('mouseout', (e) => {
+    e.preventDefault();
+    console.log("Left button clicked");
+    //changer le grid template 
+    containerLeft.style.gridTemplateColumns = "50% 50%";
+    })
 
-    // Add an event listener to the close button
-    const closeButton = dialog.querySelector('.close');
-    closeButton.addEventListener('click', () => {
-        dialog.close(); // Closes the modal dialog
-    });
-});
+const rigth = document.querySelector('.right');
+const containerRight = document.querySelector('.container');
+rigth.addEventListener('mouseover', (e) => {
+    e.preventDefault();
+    console.log("Right button clicked");
+    //changer le grid template 
+    containerRight.style.gridTemplateColumns = "20% 80%";
+    // ajouter une transition
+    containerRight.style.transition = "all 0.8s";
+    })
+
+rigth.addEventListener('mouseout', (e) => {
+    e.preventDefault();
+    console.log("Right button clicked");
+    //changer le grid template 
+    containerRight.style.gridTemplateColumns = "50% 50%";
+    })

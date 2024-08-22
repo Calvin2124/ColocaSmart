@@ -6,104 +6,83 @@
     <title>test modal</title>
 </head>
 <style>
-body {
-    display: flex;
-    justify-content: center;
+.container {
+    max-width: 600px;
+    margin: auto;
+    padding: 0;
+    background-color: #F2F2F2;
+    height: 600px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
     align-items: center;
-    height: 100vh;
-    background-color: #f1f1f1;
-}
-h1 {
-    font-size: 3rem;
-    color: #333;
-    cursor: pointer;
-}
-h1:hover {
-    color: red;
+    text-align: center;
 }
 
-.modal {
-width: fit-content;
-height: fit-content;
-padding: 0;
-border: none;
-box-shadow: 0 5px 15px rgba(0,0,0,0.3);
-}
-
-.close{
-    position: absolute;
-    top: 0;
-    right: 15px;
-    background-color: transparent;
-    z-index: 1;
-}
-
-.split{
-    height: 900px;
-    width: 900px;
-    position: relative;
-    top: 20px;
-}
-
-.split img{
-    height: 100%;
-    width: 100%;
-    object-fit: cover;
-}
 
 .left{
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 900px;
-    height: 880px;
-    clip-path: polygon(0% 0%, 0% 100%, 100% 0%);
-    cursor: pointer;
+    background: url(img/Minimalist\ UI\ illustration\ of\ couple\ dancing\ in\ a\ flat\ illustration\ style\ on\ a\ white\ background\ with\ bright\ color\ scheme\,\ dribbble\,\ flat\ vector.jpg);
+    height: 100%;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-position: center;
+}
+
+.left:hover{
+    .container{
+        grid-template-columns: 90% 10%;
+    }
 }
 
 .right{
-    position: absolute;
-    top: 0;
-    right: 0;
-    width: 900px;
-    height: 880px;
-    clip-path: polygon(100% 100%, 0% 100%, 100% 0%);
-    cursor: pointer;
+    background: url(img/Minimalist\ UI\ illustration\ of\ student\ studying\ in\ a\ flat\ illustration\ style\ on\ a\ white\ background\ with\ bright\ color\ scheme\,\ dribbble\,\ flat\ vector\ .png);
+    height: 100%;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-position: center;
 }
 
-.leftHover{
-    clip-path: polygon(0% 0%, 0% 100%, 100% 100%, 100% 0%);
-    width: 900px;
+/* --------------------- */
+.test{
+    width: 100%;
     height: 900px;
+    background-size: cover;
+    background-position: center;
+    background-color: #FEFDFD;
 }
 
-.rightHover{
-    clip-path: polygon(100% 0%, 0% 100%, 100% 100%, 100% 0%);
-    width: 900px;
-    height: 900px;
+.img{
+    background: url(img/Minimalist\ UI\ illustration\ of\ student\ studying\ in\ a\ flat\ illustration\ style\ on\ a\ white\ background\ with\ bright\ color\ scheme\,\ dribbble\,\ flat\ vector\ .png);
+    height: 100%;
+    width: 50%;
+    background-size: cover;
+    background-position: center;
+    transition: all 0.5s ease; 
+    background-position-y: 40%;
+}
+
+.img:hover{
+    width: 100%;
+    background-size: cover;
+    background-position-y: center;
 }
 
 </style>
 <body>
-    <h1>Ne clique pas !</h1>
-
-    <div class="triangle-container">
-        <div class="triangle-left"></div>
-        <div class="triangle-right"></div>
+    <div class="container">
+        <div class="left">
+            <a href="#">Rejoindre</a>
+        </div>
+        <div class="right">
+            <a href="#">Créer</a>
+        </div>
     </div>
-    
-    
+    <!-- <div class="test">
+        <div class="img"></div>
+    </div> -->
 </body>
-<dialog class="modal">
-    <div class="modal-content">
-    <span class="close">&times;</span>
-    <div>
-    <img src="../img/Minimalist UI illustration of teacher giving a lecture in a flat illustration style on a white background with bright color scheme, dribbble, flat vector.jpg" alt="placeholder image">
-    <a href="#" target="_blank">Create Group</a>
-    </div>
-    <div>
-    <img src="../img/Minimalist UI illustration of couple dancing in a flat illustration style on a white background with bright color scheme, dribbble, flat vector.jpg" alt="placeholder image">
-    <a href="#" target="_blank">Join Group</a>
-    </dialog>
 <script src="script/modal.js"></script>
 </html>
