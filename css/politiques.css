@@ -200,3 +200,9 @@ h1{
   font-family: var(--openSansFont);
   line-height: 1.5;
 }
+
+
+.email{
+  color: #394C8F;
+  font-weight: 500;
+}
