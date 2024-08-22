@@ -1,5 +1,26 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+
+:root{
+  --white: #fff;
+  --black: #000;
+  --darkGrey: #454545;
+  --azureBlue: #6595F3;
+  --mediumGrey: #757575;
+  --veryLightGrey: #F0F0F0;
+  --primaryColor: #FEFDFD;
+  --veryLightGrey2: #F5F5F5;
+  --turquoiseGreen: #03C490;
+  --mediumGrey2: #808181;
+  --robotoFont: 'Roboto', sans-serif;
+  --openSansFont: 'Open Sans', sans-serif;
+  --latoFont: 'Lato', sans-serif;
+  --purple: #7B7ED0;
+}
+
 .menu {
-    display: none;
+  display: none;
   }
   
   p {
@@ -79,3 +100,103 @@ header {
     background-color: #03C490;
     border: 1px solid #03C490;
   }
+
+/* FOOTER */
+
+footer {
+  background-color: var(--turquoiseGreen);
+}
+footer .container1440, footer header .container1440 ul, header .container1440 footer ul {
+  max-width: 1440px;
+  margin: auto;
+  padding: 0 15px;
+}
+footer .container1440 img, header .container1440 footer ul img {
+  max-height: 170px;
+  max-width: 100%;
+}
+footer .container1440 .contentFooter, header .container1440 footer ul .contentFooter {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-bottom: 30px;
+}
+footer .container1440 #listUl, header .container1440 footer ul #listUl {
+  display: flex;
+  gap: 140px;
+}
+footer .container1440 #listUl ul, header .container1440 footer ul #listUl ul {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 20px;
+}
+footer .container1440 #listUl ul .titleList, header .container1440 footer ul #listUl ul .titleList {
+  font-size: 20px;
+}
+footer .container1440 #listUl ul a, header .container1440 footer ul #listUl ul a {
+  color: #454545;
+  transition: all 0.2s ease;
+}
+footer .container1440 #listUl ul a:hover, header .container1440 footer ul #listUl ul a:hover {
+  color: #fff;
+}
+footer .container1440 p, header .container1440 footer ul p {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  color: #fff;
+}
+
+
+/* CONTENT */
+
+.presentation .container1440{
+  max-width: 1440px;
+  margin: auto;
+  height: 900px;
+  padding: 0 15px;
+  background-image: url(../img/Cityscape\,\ in\ the\ style\ of\ graphic\ design\ minimalistic\,\ animated\ gifs\,\ simplicity\,\ colors\,\ white\ background.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+h1{
+  font-size: 42px;
+  font-family: var(--latoFont);
+}
+
+.mentions{
+  margin-bottom: 40px;
+}
+
+.mentions .container1440{
+  max-width: 1440px;
+  margin: auto;
+  padding: 0 15px;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.mentions h2{
+  font-size: 32px;
+  font-family: var(--latoFont);
+  margin-bottom: 25px;
+}
+
+.mentions span{
+  font-size: 18px;
+  font-family: var(--robotoFont);
+  font-weight: 500;
+}
+
+.mentions p{
+  font-size: 18px;
+  font-family: var(--openSansFont);
+  line-height: 1.5;
+}
