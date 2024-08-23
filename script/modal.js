@@ -92,15 +92,13 @@ function createForm(){
     form.innerHTML = `
         <h1>Rejoindre un groupe</h1>
         <div class="form-group">
-            <label for="groupName">Nom du groupe</label>
-            <input type="text" id="groupName" name="groupName" required>
+            <input type="text" id="groupName" name="groupName" placeholder="Nom du groupe" required>
         </div>
         <div class="form-group">
-            <label for="password">Mot de passe</label>
-            <input type="password" id="password" name="password" required>
+            <input type="password" id="password" name="password" placeholder="Mot de passe" required>
         </div>
         <div class="form-group
-            <button type="submit">Submit</button>
+            <button class="btnOrange" type="submit">Submit</button>
         </div>
     `;
     left.insertAdjacentElement('beforeend', form);
@@ -113,19 +111,16 @@ function subscribeForm(){
     form.innerHTML = `
         <h1>Créer un groupe</h1>
         <div class="form-group
-            <label for="groupName">Nom du groupe</label>
-            <input type="text" id="groupName" name="groupName" required>
+            <input type="text" id="groupName" name="groupName" placeholder="Nom du groupe" required>
         </div>
         <div class="form-group">
-            <label for="password">Mot de passe</label>
-            <input type="password" id="password" name="password" required>
+            <input type="password" id="password" name="password" placeholder="Mot de passe" required>
         </div>
         <div class="form-group">
-            <label for="confirmPassword">Confirmer le mot de passe</label>
-            <input type="password" id="confirmPassword" name="confirmPassword" required>
+            <input type="password" id="confirmPassword" name="confirmPassword" placeholder="Confirmez votre mot de passe" required>
         </div>
         <div class="form-group">
-            <button type="submit">Submit</button>
+            <button class="btnBlue" type="submit">Submit</button>
         </div>
     `;
     right.insertAdjacentElement('beforeend', form);
@@ -147,14 +142,16 @@ function styleForm(){
     form.style.boxShadow = "0 0 10px rgba(0, 0, 0, 0.1)";
     form.style.transition = "all 0.8s";
     form.style.opacity = "0";
+    form.style.height = "300px"
     input.forEach(el => {
-        el.style.padding = "0.5rem";
+        el.style.padding = "10px 20px";
         el.style.border = "1px solid #ccc";
         el.style.borderRadius = "5px";
-        el.style.width = "100%";
+        el.style.width = "85%";
         el.style.transition = "all 0.3s";
         el.style.outline = "none";
-        el.style.backgroundColor = "D9D9D9"
+        el.style.background = "#D9D9D9";
+        el.style.borderBottom = "2px solid #000";
     });
     setTimeout(() => {
         form.style.opacity = "1";
