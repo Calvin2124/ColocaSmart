@@ -3,20 +3,24 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/2bb90c57b5.js"></script>
     <title>test modal</title>
 </head>
 <style>
 .container {
-    max-width: 600px;
+    width: 100%;
     margin: auto;
+    padding: 20px;
     padding: 0;
     background-color: #F2F2F2;
-    height: 600px;
+    height: 100%;
     display: grid;
     grid-template-columns: 50% 50%;
     align-items: center;
     text-align: center;
 }
+
+
 
 
 .left{
@@ -100,8 +104,27 @@ a{
     background-color: #FFA500;
 }
 
+.container1440{
+    max-width: 1440px;
+    margin: auto;
+    padding: 0;
+    height: 900px;
+    max-width: 700px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    justify-content: left;
+}
+
+.reset{
+    margin: auto auto auto 0;
+    font-size: 30px;
+}
+
 </style>
 <body>
+    <div class="container1440">
+        <i class="fa-solid reset fa-arrow-left"></i>
     <div class="container">
         <div class="left">
             <a class="btnBlue" href="#">Rejoindre</a>
@@ -109,6 +132,7 @@ a{
         <div class="right">
             <a class="btnOrange" href="#">Créer</a>
         </div>
+    </div>
     </div>
     <!-- <div class="test">
         <div class="img"></div>
